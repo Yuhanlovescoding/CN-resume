@@ -1,0 +1,80 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\geometry{top=6mm}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{林宇涵}
+
+
+\basicInfo{
+  \email{lin.yuhan@northeastern.edu} \textperiodcentered\ 
+  \phone{(+86) 155-7902-2315} \textperiodcentered\  
+  \github[yuhanlovescoding]{https://github.com/yuhanlovescoding}}
+
+\section{教育背景}
+\datedsubsection{\textbf{东北大学 - 计算机学院}}{波士顿，美国}
+\datedsubsection{\textit{计算机科学硕士} | GPA: 4.00/4.00}{2023年1月 - 2025年8月}
+\datedsubsection{\textbf{澳大利亚国立大学 - 经管学院}}{堪培拉，澳大利亚}
+\datedsubsection{\textit{金融管理硕士}}{2019年7月 - 2021年7月}
+\datedsubsection{\textbf{天津财经大学 - 经济学院}}{天津, 中国}
+\datedsubsection{\textit{管理学学士} | \textit{国际会计辅修} | GPA: 85/100}{2014年9月 - 2018年6月}
+
+\section{项目经验}
+\datedsubsection{\href{https://github.com/Yuhanlovescoding/CloudGazer}{\textbf{Cloud Gazer: 云朵类型识别应用}}}{波士顿, 美国}
+\datedsubsection{\textit{Java课程项目} | Java, Android, PyTorch}{2024年4月}
+云形识别应用，从用户拍摄的图片中分类不同的云形，并从Wikipedia获取该类云的气象成因
+\begin{itemize}
+  \item 将基于ImageNet数据集预训练的MobileNet模型在CCSN数据集进行微调，通过卷积神经网络进行轻量级的图像分类从而能部署到移动设备上，Top3准确率达到\textbf{96\%}
+  \item 开发了详细的文档，包括应用的架构、UI设计、测试策略和使用说明，获得\textbf{课程满分}
+\end{itemize}
+
+
+
+\datedsubsection{\href{https://github.com/Yuhanlovescoding/Chef-Meow}{\textbf{Chef Meow: 食品订购与每日菜单推荐系统}}}{波士顿, 美国}
+\datedsubsection{\textit{移动开发课程项目} | Swift, XCode}{2023年10月}
+菜单推荐应用，基于用户与LLM的对话产生每日偏好推荐，与家人使用组进行Beta测试
+\begin{itemize}
+  \item 利用Google的应用开发框架\textbf{Firebase}，利用其集成的数据库模块、认证模块确保数据存储的健壮性并与用户设备实时同步，使用其测试模块交由测试人员进行Beta测试
+  \item 支持自定义菜单，通过\textbf{ChatGPT API}提升用户体验，增强交互性和个性化，获得\textbf{课程满分}
+\end{itemize}
+
+\smallskip
+\datedsubsection{\href{https://github.com/Yuhanlovescoding/Post-Mortem-Data-Analysis-of-Silicon-Valley-Bank}{\textbf{剖析Silicon Valley Bank之倒闭：数据抓取、分析及可视化}}}{波士顿, 美国}
+\datedsubsection{\textit{Python课程项目} | Python, WebCrawler, Excel}{2023年4月}
+抓取联邦利率及硅谷银行资产结构等关键金融指标，进行数据可视化并分析硅谷银行倒闭原因
+\begin{itemize}
+  \item 通过requests及JSON自动抓取和格式化数据，从SVB和联邦储备银行网站的PDF中检索数据
+  \item 使用Excel进行数据相关性分析，数据通过openpyxl和pandas库进行存储和清理
+  \item 利用Matplotlib和Seaborn从提取的数据中可视化直观的趋势和指标，获得\textbf{课程满分}
+\end{itemize}
+
+\section{职业经历}
+
+\datedsubsection{\textbf{海创（上海）私募基金管理有限公司}}{上海, 中国}
+\datedsubsection{\textit{IT行业分析师} | SQL, Excel}{2020年5月 - 2022年1月}
+\begin{itemize}
+  \item 利用Wind与Bloomberg数据库SQL插件和宏编程开发数据分析工具，预测\textbf{3年}内主要财务指标
+  \item 该工具帮助识别有前景的商业实体，对数据进行现场研究交叉验证，通过对\textbf{2000}多家公司的基本和财务数据进行定量研究，识别出\textbf{10}个投资目标，取得投资利润的同时减少团队分析延迟至\textbf{50\%}
+\end{itemize}
+
+\smallskip
+\datedsubsection{\textbf{方正证券研究所}}{深圳, 中国}
+\datedsubsection{\textit{IT行业分析师实习生} | SQL, R, Excel}{2018年7月 - 2020年4月}
+\begin{itemize}
+  \item 建立IT行业数据库，使用SQL导入关键财务指标，并利用R语言进行数据清洗和相关性分析，最终用Excel可视化支持资产性能评估和投资组合管理决策，并自动生成周报及月报数据
+  \item 领导6名实习生小组利用数据库工具编写报告，最受欢迎报告阅读量超\textbf{2000}次
+\end{itemize}
+
+\smallskip
+\section{技能}
+Python, Java, Swift, SQL, R, C, Bash, Pytorch, Excel, PowerPoint
+\end{document}
